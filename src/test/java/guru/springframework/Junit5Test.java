@@ -1,7 +1,6 @@
 package guru.springframework;
 
-import org.junit.Assert;
-import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -9,10 +8,9 @@ import org.junit.jupiter.api.Test;
  */
 public class Junit5Test {
 
-    @Disabled
+//    @Disabled
     @Test
     void someFauxTest() {
-
-        Assert.assertEquals("foo", "foo");
+        Assertions.assertEquals("Hello World", new JavaHelloWorld().getHello());
     }
 }
